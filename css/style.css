@@ -1,0 +1,418 @@
+body
+{
+    font-family: 'Alegreya', serif;
+    overflow: hidden;
+}
+.loading-screen
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-screen i{
+    color: #8e7754;
+}
+/* _____ Start Header Styling*/
+    #home
+    {
+        background-image: url(../images/drew-coffman-1872.jpg);
+        background-size: 100% 110%;
+        height: 730px;
+        position: relative;
+    }
+    .layer
+    {
+        background-color:rgba(0,0,0,0.18);
+    }
+    /*_____Start nav styling____*/
+        .navbar-light .navbar-nav .active>.nav-link
+        {
+            color:#8e7754
+        }
+        .navbar-light .navbar-nav .nav-link 
+        {
+            color: #d4c9c9;
+            font-size: 18px;
+            margin-right: 16px;
+            padding: 3px;
+        }
+        .navbar-light .navbar-nav .nav-link:hover
+        {
+            color:#717e78
+        }
+        .navbar-light .navbar-toggler {
+            border:none
+        }
+    /*_____End nav styling_____*/
+    /*_____Start header-info styling_____*/
+        #home .header-info
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #home .header-info-content
+        {
+            width:60%;
+            padding-top: 30px;
+        }
+        .header-info p
+        {
+            font-size: 22px;
+            margin: 15px;
+            line-height: 40px;
+        }
+        .header-info h1
+        {
+            font-size: 74px;
+            font-weight: 100;
+        }
+        #home .header-info button
+        {
+            padding: 13px 23px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI light';
+            margin: 15px 15px 0px 0px;
+            border-radius: 4px;
+            color:#fff
+        }
+        .header-info .more-button
+        {
+            background-color: #8e7754;
+            border: 2px solid #8e7754;
+        }
+        .header-info .contact-button
+        {
+            background-color:transparent;
+            border:2px solid #dfd9d9;
+        }
+        .header-info .more-button a ,.header-info .contact-button a
+        {
+            text-decoration: none;
+            color:#fff
+        }
+        .circle
+        {
+            width: 5px;
+            height:46px;
+            border: 2px solid #fff;
+            padding: 15px 13px;
+            position: absolute;
+            left: 50%;
+            top: 83%;
+            transform: translate(-50%);
+            border-radius: 150px;
+            cursor: pointer;
+        }
+        .point
+        {
+            width:5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation-name: point;
+            opacity: 0;
+            animation-iteration-count: infinite;
+            animation-duration: 1.6s;
+        }
+        @keyframes point {
+            0%{top:0%;opacity: 0;}
+            5%{top:0%;opacity: 0.4;}
+            10%{top:5%;opacity:0.5;}
+            30%{top:50%;opacity:0.7;}
+            40%{top:70%;opacity:0.9;}
+            50%{top:95%;opacity:0.5;}
+            100%{top:100%;opacity: 0;}
+        }
+        .abar
+        {
+            background-color: rgb(240, 234, 234);
+            border-radius: 3px 0px 0px 3px;
+            position: fixed;
+            right: 0px;
+            top:42%;
+            z-index: 2222222;
+    
+        }
+        .abar ul li{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .abar i
+        {
+            color:#575151;
+            font-size: 18px;
+            cursor:pointer;
+            padding: 0px 10px;
+        }
+        .color-option
+        {
+            background-color: lightyellow;
+        }
+        .back-top
+        {
+            display: none;
+            cursor: pointer;
+        }
+        .back-top i
+        {
+            background-color: rgb(41, 40, 40);
+            padding:10px;
+            border-radius: 50%;
+            border: 1px solid  #b3b2b2;
+            position: fixed;
+            right:10px;
+            bottom: 10px;
+            color: #b3b2b2;
+            z-index: 3333333;
+        }
+
+    /* _____ End header-info Styling_____*/
+/* _____ End Header Styling_____*/
+
+/* _____ Start About,Contact,Location styling _____*/
+
+    #about .about-info
+    {
+        height: 100%;
+        padding:35px 65px 0px 0px;
+        margin-top: 20px;
+    }
+    #about .icons i,#contact i
+    {
+        color:#8e7754;
+        margin-right: 15px;
+        border:1px solid rgb(218, 215, 215);
+        border-radius:50% ;
+        padding: 10px;
+        width: 35px;
+        height:35px;
+    }
+    #about img
+    {
+        padding:0px 60px;
+    }
+    #location,#contact
+    {
+        background-color: rgb(247, 245, 245);
+    }
+    #location img, #contact img
+    {
+        padding : 0px 60px 0px 15px
+    }
+    #location .location-info
+    {
+        padding:0px 60px;
+        margin-top: 70px;
+    }
+    #contact .contact-info
+    {
+        padding:0px 60px;
+        margin-top: 50px;
+    }
+    .text,span
+    {
+        line-height: 35px;
+        color: #797474;
+        font-size: 17px;
+    }
+/* _____ End About,Contact,Location styling _____*/
+
+    .baking .container-fluid
+    {
+        padding: 0px 50px ;
+    } 
+
+/*_____ Start Info Styling _____*/
+    .info
+    {
+        background-color: #403d38;
+    }
+    .info .container-fluid
+    {
+        width:90%;
+    }
+    .info h5
+    {
+        color: rgb(235, 230, 230);
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .hr
+    {
+        width:100%;
+        height:1px;
+        background-color: rgb(97, 93, 93);
+        margin: 10px 0px ;
+    }
+    .info span,.info p
+    {
+        color: #888787;
+        line-height: 28px;
+    }
+    .contact-details
+    {
+        background-image: url(../images/contact-details-map.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .contact-details-layer
+    {
+        background-color: rgba(66, 60, 56, 0.85)
+    }
+/*_____ End Info Styling _____*/
+
+/*_____ Start footer Styling _____*/
+    .footer
+    {
+        background-color: rgb(53, 51, 48);
+        color:rgb(148, 148, 148) 
+    }
+    .footer .icons
+    {
+        width: 12%;
+    }
+    .footer .icons a
+    {
+        color:rgb(148, 148, 148) 
+    }
+    .footer .icons i
+    {
+        background-color:#504c46 ;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+/*_____ Start footer Styling _____*/
+
+@media (min-width:768px)and (max-width:1345px)
+ {
+    .col-md-6 img
+    {
+        height: 100%;
+    }
+}
+@media (max-width:991px)
+{
+        #home
+        {
+            height:520px;
+        }
+        .navbar
+        {
+            background-color: #fff !important;
+        }
+        .navbar-brand .changeImage
+        {
+            display: flex !important;
+        }
+        .navbar-brand .mainImg
+        {
+            display: none;
+        }
+        .navbar-nav    /*toogle*/
+        {
+             padding: 10px 0;  
+        }
+        .navbar-toggler
+        {
+            color:#000 !important;
+        }
+        .navbar-light .navbar-nav .nav-link
+        {
+            color: rgb(85, 85, 85);
+            padding-bottom: 10px;
+        }
+        .navbar-light .navbar-nav .nav-link:hover
+        {
+            color:#34b9ca;
+        }
+        .header-info-content
+        {
+            min-width:85%;
+        }
+        .header-info h1
+        {
+            font-size: 40px;
+        }
+        .header-info p
+        {
+            font-size: 17px;
+            line-height: 25px;
+        }
+        #home .buttons button
+        {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    /*End Header*/
+
+    /* Start About,Location,Contact*/
+        #about .about-info,.col-md-6 img,
+        #location .location-info,#contact .contact-info
+        {
+            padding: 10px 10px 0px ;
+        }
+        #about img
+        {
+            padding:0px ;
+            padding-top: 20px;
+        }
+        #location .location-info,#contact .contact-info
+        {
+            margin-top: 0px;
+        }
+        #location img, #contact img
+        {
+            padding : 0px ;
+            padding-top: 20px;
+        }
+    /* End About,Location,Contact*/
+
+    /* Start Baking*/
+        .baking .container-fluid
+        {
+            padding: 0px 20px;
+        }
+        .baking .col-md-4
+        {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .baking .text
+        {
+            width: 85%;
+            margin: 15px auto;
+        }
+    /* End Baking*/
+
+    .info .col-md-3
+    {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:600px)
+{
+    .navbar
+    {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    .circle
+    {
+        top:86%
+    }
+}
